@@ -1,0 +1,51 @@
+/* Common Css Start */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    margin-right: 25px;
+    color: #8987A1;
+    transition: .5s;
+}
+ul li a:hover{
+    color: black;
+    font-weight: bolder;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1270px;
+}
+/* Common Css End */
+
+
+/* Navbar Start */
+.navbarRoot{
+    margin-top: 20px;
+}
+.parentNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+#navbarCart{
+    color: black;
+}
+
+#cartRoot{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+/* Navbar End */
