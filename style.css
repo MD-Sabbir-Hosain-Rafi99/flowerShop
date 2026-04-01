@@ -1,104 +1,170 @@
 /* Common Css Start */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Noto Serif", serif;
 }
-body{
+
+body {
     background-color: #F5F8FF;
 }
-ul li{
+
+#nav-list .nav-iteam{
     list-style-type: none;
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
     margin-right: 25px;
     color: #8987A1;
     transition: .5s;
 }
-ul li a:hover{
+
+ul li a:hover {
     color: black;
     font-weight: bolder;
 }
 
-.container{
+.container {
     margin: 0 auto;
     width: 1270px;
 }
+
 /* Common Css End */
 
 
 /* Navbar Start */
-.navbarRoot{
+.navbarRoot {
     margin-top: 20px;
 }
-.parentNavbar{
+
+.parentNavbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-ul{
+ul {
     display: flex;
     align-items: center;
 }
-#navbarCart{
+
+#navbarCart {
     color: black;
 }
 
-#cartRoot{
+#cartRoot {
     display: flex;
     align-items: center;
     column-gap: 10px;
 }
+
 /* Navbar End */
 
 /* Banner Start */
-.bannerRoot{
+.bannerRoot {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-h1{
+h1 {
     font-size: 65px;
 }
 
-#banner{
+#banner {
     margin-top: 120px;
 }
+
 /* Banner End */
 
 
-#ourPlantsParent{
+#ourPlantsParent {
     margin-top: 150px;
     margin-bottom: 40px;
 }
 
-.cardRoot{
+.cardRoot {
     margin-top: 50px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    row-gap: 25px;
-    column-gap: 25px;
+    gap: 20px;
+    justify-content: space-between;
 }
 
-.card{
+.card {
     width: 270px;
+    border: 5px solid black;
     text-align: center;
+    border: none;
+    margin-bottom: 45px;
 }
 
-.cardTexts{
+.cardTexts {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-button{
-  width: 100%;
-  padding: 15px 0 15px 0;
-  border: none;
-  font-family: "Inter", sans-serif;
-  background-color: #E95A08;
-  color: white;
+button {
+    width: 100%;
+    padding: 15px 0 15px 0;
+    border: none;
+    background-color: #E95A08;
+    color: #fff;
+
+}
+
+
+.badge-part{
+    display: flex;
+
+    gap: 60px;
+}
+
+
+.badge-part {
+    position: relative;
+}
+
+.child-badge {
+    position: absolute;
+    top: -106px;
+    left: 389px;
+    animation: spin 10s linear infinite;
+    -webkit-animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);  
+}
+    to {
+        transform: rotate(360deg);
+}
+}
+
+
+
+/* .badge-list{
+    display: block;
+} */
+
+.badge-ul{
+    display: block;
+    padding-left: 30px;
+}
+
+.badge-part h2{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+
+.badge-list{
+    font-size: 26px;
+    color: rgb(142, 141, 141);
+    padding-bottom: 25px;
+    line-height: 40px;
+    
 }
